@@ -1,0 +1,4 @@
+name = "Sdevice"
+grammar = "sdevice"
+path_suffixes = ["cmd"]
+line_comments = ["# ", "#"]
