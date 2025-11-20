@@ -8,4 +8,4 @@ repository = "https://github.com/Drunk-Dream/sentaurus-tcad-zed"
 
 [grammars.sdevice]
 repository = "https://github.com/Drunk-Dream/tree-sitter-sdevice"
-rev = "ec3fe1d8ed745b0ec67aee27c277f13097c0dc01"
+rev = "b298d93e4c3925b8703bba1e8d49e88d47044d22"

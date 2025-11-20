@@ -1,4 +1,4 @@
-
+(sharp_command_name) @proproc
 (define_micro
     name: (identifier) @constant)
 (section_statement
@@ -11,9 +11,26 @@
         "Plot"
         "CurrentPlot"
         "Solve"))
-(at_angle_expression
-    (binop_expr
-        (identifier) @variable))
+(key_value
+    key: (identifier) @constant
+    ; (#any-of? @constant
+    ;     "Grid"
+    ;     "Parameter"
+    ;     "Plot"
+    ;     "Current"
+    ;     "Output"
+    ;     "Name"
+    ;     "Voltage"
+    ;     "Workfunction"
+    ;     "Voltage"
+    ;     "PMI")
+    value: [
+        (identifier) @variable
+        (_)])
+(section_statement
+    ["{" "}"] @punctuation.bracket)
+(binop_expr
+    (identifier) @variable)
 [
  "**"
  "/" "*" "%" "+" "-"
@@ -27,7 +44,7 @@
  "|"
  "&&"
  "||"
- ] @operator
+    ] @operator
 (string) @string
 (number) @number
 (at_reference) @variable

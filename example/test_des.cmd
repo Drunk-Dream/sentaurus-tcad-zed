@@ -1,6 +1,6 @@
 #setdep @node|sde@
 
-#define _t0_    5e-7
+#define _t0_    -5e-7
 #define _ti_    @<_t0_+5e-7>@
 #define _trise_ 2e-7
 #define _td_    @<_ti_+_trise_>@
@@ -21,11 +21,11 @@
 ####################################
 
 File {
-    	Grid 	= "@tdr@"
-	    Parameter = "@parameter@"
-    	Plot 	= "@tdrdat@"
-    	Current = "@plot@"
-    	Output 	= "@log@"
+   	Grid 	= "@tdr@"
+    Parameter = "@parameter@"
+   	Plot 	= "@tdrdat@"
+   	Current = "@plot@"
+   	Output 	= "@log@"
 }
 
 Electrode {
