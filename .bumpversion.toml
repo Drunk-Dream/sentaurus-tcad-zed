@@ -1,0 +1,11 @@
+[tool.bumpversion]
+current_version = "0.0.3"
+commit = false
+tag = false
+allow_dirty = true
+message = "chore(release): version {current_version} -> {new_version}"
+
+[[tool.bumpversion.files]]
+filename = "extension.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'

@@ -1,7 +1,4 @@
-(string) @string
-(at_reference) @variable
-(comment) @comment
-(number) @number
+
 (define_micro
     name: (identifier) @constant)
 (section_statement
@@ -14,3 +11,24 @@
         "Plot"
         "CurrentPlot"
         "Solve"))
+(at_angle_expression
+    (binop_expr
+        (identifier) @variable))
+[
+ "**"
+ "/" "*" "%" "+" "-"
+ "<<" ">>"
+ ">" "<" ">=" "<="
+ "==" "!="
+ "eq" "ne"
+ "in" "ni"
+ "&"
+ "^"
+ "|"
+ "&&"
+ "||"
+ ] @operator
+(string) @string
+(number) @number
+(at_reference) @variable
+(comment) @comment

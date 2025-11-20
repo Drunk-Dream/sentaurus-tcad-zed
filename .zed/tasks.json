@@ -1,0 +1,7 @@
+[
+  {
+    "label": "Bump My Version Patch",
+    "command": "bump-my-version",
+    "args": ["bump", "patch", "--commit"]
+  }
+]

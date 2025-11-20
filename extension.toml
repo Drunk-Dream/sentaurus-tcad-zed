@@ -1,6 +1,6 @@
 id = "sentaurus-tcad-zed"
 name = "Sentaurus TCAD ZED"
-version = "0.0.2"
+version = "0.0.3"
 schema_version = 1
 authors = ["Drunk-Dream <dru-dream@outlook.com>"]
 description = "Sentaurus TCAD extension for ZED"
@@ -8,4 +8,4 @@ repository = "https://github.com/Drunk-Dream/sentaurus-tcad-zed"
 
 [grammars.sdevice]
 repository = "https://github.com/Drunk-Dream/tree-sitter-sdevice"
-rev = "51274ea51a2834b5a449b683746b8609dd2a1495"
+rev = "ec3fe1d8ed745b0ec67aee27c277f13097c0dc01"
